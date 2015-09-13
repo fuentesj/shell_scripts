@@ -3,7 +3,7 @@
 echo "Please enter a URL: "
 read URL
 
-URL_VALIDATION_REGEX="^((https?|ftps?):\/\/)?[0-9A-Za-z]+.(com|org|net)$"
+URL_VALIDATION_REGEX="^((https?|ftps?):\/\/)?([0-9A-Za-z]+.)+.(com|org|net|au|de|fr|it|jp|ru|cn|es|uk)$"
 
 if [[ $URL =~ $URL_VALIDATION_REGEX ]] ; then
 	echo "Please enter in the number of times this URL should be accessed:"
